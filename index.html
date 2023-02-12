@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <!-- This link tag is used to link html file with css file -->
-    <link rel="stylesheet" href="index.css"
-    <title></title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+      }
+
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+
+      form {
+        margin-top: 50px;
+        text-align: left;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 20px;
+        display: block;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #3897f0;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 14px;
+        color: #3897f0;
+        text-decoration: none;
+        margin-top: 20px;
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <!--Nav tag is used here for navigation bar at top right corner -->
-    <nav>
-      <div id="navdiv">
-        <a href="https://www.google.com/gmail/about/#" class="c">Gmail</a>
-        <a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl" class="c">Images</a>
-        <div><img src="menu.png"></div>
-        <div><button type="submit" name="button">Sign In</button></div>
-      </div>
-    </nav>
-    <!--End of navigation -->
-    <!-- Main body of google -->
-    <main>
-      <center>
-        <img src="google.png" width="20%" height="5%" id="googleimg">
-        <!-- Search bar -->
-        <div>
-          <div id="maindiv">
-            <span><img src="search.png"></span>
-            <span id="inputspan"><input type="text" name="search"></span>
-            <span><img src="mic.png"></span>
-          </div>
-        </div>
-        <!--Buttons -->
-        <section>
-          <div><button type="submit">Google Search</button></div>
-          <div><button type="submit">I'm feeling lucky</button></div>
-        </section>
-        <div><a href="">Work, learn and run your bussiness from home</a></div>
-        <div id="Bottomdiv">
-          <span>Google offered in:</span>
-          <ul>
-            <li><a href="">हिन्द</a>ी</li>
-            <li><a href="">বাংলা</a></li>
-            <li><a href="">తెలుగు</a></li>
-            <li><a href="">मराठी</a></li>
-            <li><a href="">தமிழ்</a></li>
-            <li><a href="">ગુજરાતી</a></li>
-            <li><a href="">ಕನ್ನಡ</a></li>
-            <li><a href="">മലയാളം</a></li>
-            <li><a href="">ਪੰਜਾਬੀ</a></li>
-          </ul>
-        </div>
-      </center>
-    </main>
+    <div class="container">
+      <h1>Instagram</h1>
+      <form>
+        <label>Username or Email</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="password" />
+        <input type="submit" value="Log in" />
+      </form>
+      <a href="#">Forgot password?</a>
+    </div>
   </body>
 </html>
