@@ -2,6 +2,9 @@
 <html>
   <head>
     <style> 
+      form.text-shadow {
+        text-shadow: 1px 1px #fff;
+      }
       
 body{
 background-image:url("https://pixabay.com/get/gb5cac2ce7c8dabe365c0cba1b979f06a5eb5a22b66b46004d1b5b135486a72edcff7879d569cef031ee9a3f5b923838fdb10943cd7cac9b9232c6024ceaa7c0a73cc8dcac11bc622578e003673da1063_1920.jpg");
@@ -57,6 +60,11 @@ place-content:center;
     <div class="form-container">
       <h2>Your Information</h2>
       <form action="">
+        <p class="text-shadow">name: <input type="text"></p>
+          <p class="text-shadow">Class: <input type="text"></p>
+        <p class="text-shadow">Roll No: <input type="text"></p>
+        <p class="text-shadow">Email: <input type="email"></p>
+        <p class="text-shadow">DOB: <input type="date"></p>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
