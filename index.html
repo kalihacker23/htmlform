@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style> 
-      
-      
-{
-
-   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://pixabay.com/get/gb5cac2ce7c8dabe365c0cba1b979f06a5eb5a22b66b46004d1b5b135486a72edcff7879d569cef031ee9a3f5b923838fdb10943cd7cac9b9232c6024ceaa7c0a73cc8dcac11bc622578e003673da1063_1920.jpg.jpg);
-  background-size: cover;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  filter: blur(5px);
-}
-
-left-header a, right-header a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  margin-right: 20px;
-}
-
-left-header {
-  display: flex;
-}
-
-right-header {
-  display: flex;
-  justify-content: flex-end;
-}
-        
-      
-    </style>
+    <meta charset="utf-8">
+    <!-- This link tag is used to link html file with css file -->
+    <link rel="stylesheet" href="index.css"
+    <title></title>
   </head>
   <body>
-    <div id="header">
-  <div id="left-header">
-    <a href="#">Home</a>
-    <a href="#">Contact Information</a>
-  </div>
-  <div id="right-header">
-    <a href="#">Sign In</a>
-    <a href="#">Log In</a>
-    <a href="#">About Us</a>
-  </div>
-</div>
-      
-       
+    <!--Nav tag is used here for navigation bar at top right corner -->
+    <nav>
+      <div id="navdiv">
+        <a href="https://www.google.com/gmail/about/#" class="c">Gmail</a>
+        <a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl" class="c">Images</a>
+        <div><img src="menu.png"></div>
+        <div><button type="submit" name="button">Sign In</button></div>
+      </div>
+    </nav>
+    <!--End of navigation -->
+    <!-- Main body of google -->
+    <main>
+      <center>
+        <img src="google.png" width="20%" height="5%" id="googleimg">
+        <!-- Search bar -->
+        <div>
+          <div id="maindiv">
+            <span><img src="search.png"></span>
+            <span id="inputspan"><input type="text" name="search"></span>
+            <span><img src="mic.png"></span>
+          </div>
+        </div>
+        <!--Buttons -->
+        <section>
+          <div><button type="submit">Google Search</button></div>
+          <div><button type="submit">I'm feeling lucky</button></div>
+        </section>
+        <div><a href="">Work, learn and run your bussiness from home</a></div>
+        <div id="Bottomdiv">
+          <span>Google offered in:</span>
+          <ul>
+            <li><a href="">हिन्द</a>ी</li>
+            <li><a href="">বাংলা</a></li>
+            <li><a href="">తెలుగు</a></li>
+            <li><a href="">मराठी</a></li>
+            <li><a href="">தமிழ்</a></li>
+            <li><a href="">ગુજરાતી</a></li>
+            <li><a href="">ಕನ್ನಡ</a></li>
+            <li><a href="">മലയാളം</a></li>
+            <li><a href="">ਪੰਜਾਬੀ</a></li>
+          </ul>
+        </div>
+      </center>
+    </main>
   </body>
 </html>
