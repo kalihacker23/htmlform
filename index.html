@@ -5,93 +5,49 @@
       
       
 body{
-background-image:url("https://pixabay.com/get/gb5cac2ce7c8dabe365c0cba1b979f06a5eb5a22b66b46004d1b5b135486a72edcff7879d569cef031ee9a3f5b923838fdb10943cd7cac9b9232c6024ceaa7c0a73cc8dcac11bc622578e003673da1063_1920.jpg");
-background-position:center;
-background-size:cover;
-min-height:100vh;
-background-repeat:no-repeat;
-display:grid;
-place-content:center;
-}  
-     
 
-      .form-container {
-        backdrop-blur: 10px;
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: rgpa(255,255,255,0.8);
-        border: 2px solid #ccc;
-      }
-      label {
-        display: block;
-        margin-bottom: 10px;
-        font-weight: bold;
-      }
-      input[type="text"], select {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        font-size: 16px;
-      }
-      input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-      }
-      input[type="submit"]:hover {
-        background-color: #3e8e41;
-      }
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image.jpg);
+  background-size: cover;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  filter: blur(5px);
+}
+
+#left-header a, #right-header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+#left-header {
+  display: flex;
+}
+
+#right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+        
+      
     </style>
   </head>
   <body>
-    
+    <div id="header">
+  <div id="left-header">
+    <a href="#">Home</a>
+    <a href="#">Contact Information</a>
+  </div>
+  <div id="right-header">
+    <a href="#">Sign In</a>
+    <a href="#">Log In</a>
+    <a href="#">About Us</a>
+  </div>
+</div>
       
-    <div class="form-container">
-      <h2>YOUR INFORMATION</h2>
-      <form action="">
-        
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="class">Class:</label>
-        <input type="text" id="class" name="class" required>
-        
-        <label for="rollno">Roll No:</label>
-        <input type="text" id="rollno" name="rollno" required>
-        
-        <label for="age">Age:</label>
-        <input type="text" id="age" name="age" required>
-        
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
-        
-        <label for="dob">Date of Birth:</label>
-        <input type="text" id="dob" name="dob" required>
-        
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Other">Other</option>
-        </select>
-        
-        <label for="hobby">Hobby:</label>
-        <input type="text" id="hobby" name="hobby" required>
-        
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
-        
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+       
   </body>
 </html>
